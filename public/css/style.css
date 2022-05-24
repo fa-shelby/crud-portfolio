@@ -1,0 +1,354 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    /* Reset de la page */
+    scroll-behavior: smooth;
+    /* Adoucit le scroll */
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8F2EB;
+}
+
+* {
+    box-sizing: border-box;
+    /* "indique au navigateur de prendre en compte la bordure et le remplissage dans la valeur définie pour la largeur et la hauteur." */
+}
+
+.clear {
+    clear: both;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+}
+
+/******************
+     HEADER
+*******************/
+
+header {
+    height: 80px;
+    background-color: #84695F;
+}
+
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    font-weight: lighter;
+    line-height: 80px;
+    color: #fff;
+    float: left;
+    text-align: start;
+    margin : 0 0 0 20px;
+}
+
+header nav {
+    float: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 30px 0 0;
+    line-height: 80px;
+    /* Centrer verticalement la navigation */
+
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+/****************
+     LIENS
+*****************/
+
+a {
+    text-decoration: none;
+}
+
+header a {
+    color: #fff;
+}
+
+header nav ul li a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+section a {
+    color: blue;
+}
+
+section a:hover,
+section button.delete_btn:hover,
+section button.cancel_btn:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+/**********************
+      TABLE
+***********************/
+
+table{
+    border-collapse: collapse;
+    margin: 0 auto 100px;
+    background-color: #ffffff;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.contacts-table {
+    margin-bottom: 513px;
+}
+
+.details-table {
+    margin-bottom: 400px;
+}
+
+.welcome {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    font-weight: lighter;
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+/****************
+    BOUTONS
+*****************/
+
+.btn,
+button.btn {
+    width: 100px;
+    background-color: #b9fbc0;
+    border: 1px solid #000;
+    border-radius: 7px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    display: block;
+    /* Pour prendre en compte les margin et padding */
+    padding: 0.4em 0;
+    position: relative;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.read_btn {
+    width: 200px;
+    background-color: #E0D0C2;
+    margin: 30px auto 100px;
+}
+
+.create_btn {
+    margin-bottom: 15px;
+}
+
+.delete_btn,
+button.delete_btn {
+    background-color: #fec5bb;
+}
+
+.create_work_btn {
+    width: 180px;
+    left: 30px;
+}
+
+.create_service_btn {
+    width: 180px;
+    left: 50px;
+}
+
+.create_details_btn {
+    width: 230px;
+    left: 380px;
+}
+
+.btn.display-image-btn {
+    width: 220px;
+    margin: 10px 0 20px;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0.2em 0;
+    border-radius: 5px;
+    background-color: #cde3ea;
+}
+
+.btn.display-image-btn:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+/*********************
+     FORMULAIRES
+**********************/
+
+form {
+    width: 430px;
+    margin: 10px auto;
+    padding: 30px;
+    border: 2px solid #603D27;
+    border-radius: 10px;
+    background-color: #F9FAFD;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.login-form {
+    margin-bottom: 210px;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+}
+
+input[type=checkbox] {
+    margin-top: 10px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 366px;
+}
+
+input[type=radio] {
+    margin-top: 15px;
+}
+
+textarea {
+    width: 366px;
+    height: 100px;
+    resize: none;
+}
+
+button[type=submit] {
+    font-weight: 600;
+    color: #000;
+    background-color: #b9fbc0;
+    border: 1px solid #603D27;
+    border-radius: 3px;
+    display: block;
+    margin: 30px auto;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* Au niveau ergonomique, la main donne une indication à l'utilisateur : il sait qu'il peut cliquer à cet endroit */
+}
+
+button[type=submit]:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.hide-preview {
+    font-size: 12.5px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.hide-preview:hover {
+    font-weight: 500;
+    text-decoration: underline;
+    color: darkslateblue;
+}
+
+.preview {
+    margin-bottom: 20px;
+}
+
+
+/***************
+    MESSAGES
+****************/
+
+.error_message,
+.alert_message {
+    color: red;
+}
+
+.modal-container {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.modal {
+    width: 350px;
+    height: 260px;
+    margin: 140px auto;
+    padding: 10px 20px 50px;
+    background-color: #F8F2EB;
+    border-radius: 10px;
+    border: 3px solid #603D27;
+}
+
+.modal h1 {
+    margin-top: 15px;
+}
+
+.modal .btn {
+    float: left;
+    width: 46%;
+}
+
+.modal .delete_btn {
+    margin-left: 24px;
+}
+
+
+/**************
+    FOOTER
+**************/
+
+footer {
+    height: 60px;
+    background-color: #84695F;
+    margin-top: 200px;
+}
+
+footer p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 60px;
+    margin: 0 0 0 20px;
+    text-align: left;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #ECE3D9FF;
+    text-decoration: underline;
+}
+
